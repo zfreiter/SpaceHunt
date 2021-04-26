@@ -44,6 +44,7 @@ function makeMove(direction)
         }
 
 
+	checkLocation()
         document.forms[0].location.value = x.toString() + "," + y.toString();
 
 
@@ -51,14 +52,23 @@ function makeMove(direction)
         document.forms[0].energy.value -= 10;
         document.forms[0].supplies.value -= 2;
         document.forms[0].message.value=item = "Movement Detected";
+	checkStatus();
 }
 
 //checkStatus checks to see if the player is still viable
-//Has the player still have enough energy and supplies.
+//Does the player still have enough energy and supplies?
 //This should be checked after every move
 
 <!---->
 function checkStatus()
 {
 
+}
+
+//checkLocation checks to see if the player is still within the gameplay space
+//Student's choice on what to do if they left the galaxy - but something should happen
+
+<!---->
+function checkLocation()
+{
 }
