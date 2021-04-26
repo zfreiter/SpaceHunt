@@ -2,6 +2,7 @@
 //initializeState initializes various state variables upon start-up.
 //In production mode, most of these should be populated from a configuration
 //file or a random generator.
+
 <!---->
 function initializeState()
 {
@@ -50,4 +51,14 @@ function makeMove(direction)
         document.forms[0].energy.value -= 10;
         document.forms[0].supplies.value -= 2;
         document.forms[0].message.value=item = "Movement Detected";
+}
+
+//checkStatus checks to see if the player is still viable
+//Has the player still have enough energy and supplies.
+//This should be checked after every move
+
+<!---->
+function checkStatus()
+{
+
 }
