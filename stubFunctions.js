@@ -14,4 +14,5 @@ function checkStatus()
 <!---->
 function checkLocation()
 {
+
 }
