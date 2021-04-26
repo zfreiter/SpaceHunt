@@ -1,4 +1,7 @@
 
+//initializeState initializes various state variables upon start-up.
+//In production mode, most of these should be populated from a configuration
+//file or a random generator.
 <!---->
 function initializeState()
 {
